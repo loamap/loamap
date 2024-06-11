@@ -1,8 +1,10 @@
+import { ChakraProvider } from "@chakra-ui/react";
+
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      init setting
-    </div>
+    <ChakraProvider>
+      <div>hi</div>
+    </ChakraProvider>
   );
 }
 
