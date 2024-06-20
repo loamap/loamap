@@ -1,4 +1,10 @@
-{
+interface LinersPricing {
+  [key: string]: {
+    [key: string]: number
+  }
+}
+
+const linersPricing: LinersPricing = {
   "Luterra": {
     "Luterra": 0,
     "Tortoyk": 1100,
@@ -255,3 +261,5 @@
     "Kurzan": 0
   }
 }
+
+export default linersPricing;
