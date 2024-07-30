@@ -59,8 +59,9 @@ export const LinersPricing = () => {
         {result !== null && (
           <VStack className="mt-4" align="start">
             <Text>
-              {locationNames[from]}에서 {locationNames[to]}까지의 여행 비용은{' '}
-              {result.cost} 원 입니다.
+              {locationNames[result.path[0]]}에서{' '}
+              {locationNames[result.path[result.path.length - 1]]}까지의 여행
+              비용은 {result.cost} 원 입니다.
             </Text>
             <Text>
               경로: {result.path.map(loc => locationNames[loc]).join(' -> ')}

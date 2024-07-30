@@ -3,7 +3,9 @@
 
 import { components, hooks, utils } from '@generouted/react-router/client';
 
-export type Path = `/`;
+export type Path =
+  | `/`
+  | `/waypoint`
 
 export type Params = {};
 
